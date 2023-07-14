@@ -1,0 +1,151 @@
+.user-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+  }
+  h2{
+    text-align:center;
+  }
+  .user-card {
+    width: 600px;
+    background-color: #d6c4ff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    animation: slide-up 0.5s ease;
+  }
+  
+  @keyframes slide-up {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .user-card:hover {
+    transform: translateX(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-header {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card-header img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+  .question {
+    color: #660b5a;
+  }
+  .answer{
+    border:2px solid #660b5a;
+    padding :10px;
+    color:rgb(138, 33, 79);
+    font-weight: 700;
+  }
+  .card-body {
+    padding: 20px;
+  }
+  
+  h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #4c2889;
+  }
+  
+  .card-details {
+    margin-bottom: 20px;
+  }
+  
+  .card-details div {
+    margin-bottom: 8px;
+   
+  }
+  
+  .btn-view {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #6932a3;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-view:hover {
+    background-color: #512a7e;
+  }
+  
+  .tab-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f3f3f3;
+    margin-top:150px;
+  }
+  
+  
+  .tab-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    background-color: purple;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tab:hover {
+    background-color: #7e57c2;
+  }
+  
+  .tab-panel {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-top: none;
+    margin-top: 20px;
+  }
+  
+  .panel-heading {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .tab-content {
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .tab-list {
+      flex-direction: column;
+    }
+  
+    .tab {
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .tab-panel {
+      border-left: none;
+    }
+  }
+  

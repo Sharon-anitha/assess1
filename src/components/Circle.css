@@ -1,0 +1,52 @@
+.circle-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .circle-item {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: yellow;
+  }
+  
+  .count {
+    font-size: 24px;
+    color:white;
+  }
+  
+  .color {
+   
+    color:white;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  .duplicate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+ 
+  }
+  .duplicate button{
+    border:3px solid green;
+    color:rgb(46, 5, 43);
+    margin-left:10px;
+    height:50px;
+    font-size:20px;
+    font-weight:700;
+    background-color: rgb(178, 207, 216);
+  }
